@@ -1,0 +1,452 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #f2f6e9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     min-height: 100%;
+}
+
+.navbar {
+    background:#106E5B;
+}
+
+.nav-link,
+.navbar-brand {
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-link {
+    margin-right: 1em !important;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.header {
+  	background-image: url('https://images.ctfassets.net/hrltx12pl8hq/7oQKmoi04ul0JsCUxkuHih/3fbf330101cffcce262c7ab54844009d/05-nature-backgrounds_1491895829.jpg?fit=fill&w=480&h=270');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     min-height: 100%;
+     min-width: 100%;
+  }
+
+.about {
+      background-image: url('https://static.vecteezy.com/system/resources/thumbnails/000/618/946/small/Insurance_Health_2019_9-04.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: relative;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+       min-height: 100%;
+       min-width: 100%;
+  }
+
+.product {
+    background-image: url('https://st2.depositphotos.com/4187197/6209/v/950/depositphotos_62094779-stock-illustration-insurance-services-glows-bright-blue.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     min-height: 100%;
+     min-width: 100%;
+}
+
+.contact {
+    background-image: url('https://cdn.searchenginejournal.com/wp-content/uploads/2018/06/best-contact-us-pages.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     min-height: 100%;
+     min-width: 100%;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all login buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.container1 {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.description {
+    left: 50%;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+}
+
+.description h1 {
+    color: #6ab446;
+    animation: expand .8s ease forwards;
+}
+
+.description p {
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    animation: slideUp .8s ease-in-out forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: translateX(1400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.features {
+    margin: 4em auto;
+    padding: 1em;
+    position: relative;
+}
+
+.feature-title {
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.features img {
+    -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 16px;
+}
+
+.features .form-control,
+.features input {
+    border-radius: 0;
+}
+
+.features .btn {
+    background-color: #589b37;
+    border: 1px solid #589b37;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.features .btn:hover {
+    background-color: #333;
+    border: 1px solid #333;
+}
+
+.features .my-custom-scrollbar {
+position: relative;
+height: 200px;
+overflow: auto;
+}
+
+.features .table-wrapper-scroll-y {
+display: block;
+}
+
+.features .btn-container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands";
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.fa-instagram:before {
+    content: "\f16d";
+}
+
+.fa-facebook:before {
+    content: "\f09a";
+}
+
+.features .btn-ins {
+    min-width: 110px;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: #C71E7E;
+    display: flex;
+    transition: all .2s ease-in-out;
+   margin-right: 10px;
+ }
+
+.features .btn-ins i {
+      color: #DF3796;
+      font-size: 20px;
+      padding-right: 10px;
+      transition: all .3s ease-in-out;
+    }
+  .features .btn-ins span {
+      font-family: "Roboto", sans-serif;
+      align-self: center;
+      transform: translateX(0px);
+      transition: all .1s ease-in-out;
+      opacity: 1;
+     }
+
+.features .btn-ins:hover {
+    transform: scale(1.1);
+    background: linear-gradient(to right, #ff3019 0%,#c90477 100%);
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.10);
+  }
+    .features .btn-ins:hover i {
+        transform: translateX(45px);
+        padding-right: 0;
+        color: #FFF;
+      }
+    .features .btn-ins:hover span {
+        transform: translateX(30px);
+        opacity: 0;
+      }
+    }
+.features .btn-ins:active {
+     transform: scale(1);
+     box-shadow: 0px 2px 10px rgba(0,0,0,0.10);
+   }
+
+.features .btn-f {
+    min-width: 110px;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: #286ED6;
+    display: flex;
+    transition: all .2s ease-in-out;
+    margin-right: 10px;
+  }
+
+.features .btn-f i {
+      color: #286ED6;
+      font-size: 20px;
+      padding-right: 10px;
+      transition: all .3s ease-in-out;
+    }
+.features .btn-f span {
+      font-family: "Roboto", sans-serif;
+      align-self: center;
+      transform: translateX(0px);
+      transition: all .1s ease-in-out;
+      opacity: 1;
+     }
+
+.features .btn-f:hover {
+    transform: scale(1.1);
+    background-color: #286ED6;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.10);
+  }
+    .features .btn-f:hover i {
+        transform: translateX(45px);
+        padding-right: 0;
+        color: #FFF;
+      }
+    .features .btn-f:hover span {
+        transform: translateX(30px);
+        opacity: 0;
+      }
+.features .btn-f:active {
+     transform: scale(1);
+     box-shadow: 0px 2px 10px rgba(0,0,0,0.10);
+   }
+
+.drop-zone {
+     max-width: 400px;
+     height: 200px;
+     padding: 25px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     font-family: "Quicksand", sans-serif;
+     font-weight: 500;
+     font-size: 20px;
+     cursor: pointer;
+     color: #cccccc;
+     border: 4px dashed #009578;
+     border-radius: 10px;
+   }
+
+.drop-zone--over {
+     border-style: solid;
+   }
+
+.drop-zone__input {
+     display: none;
+   }
+
+.drop-zone__thumb {
+     width: 100%;
+     height: 100%;
+     border-radius: 10px;
+     overflow: hidden;
+     background-color: #cccccc;
+     background-size: cover;
+     position: relative;
+   }
+
+.drop-zone__thumb::after {
+     content: attr(data-label);
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     padding: 5px 0;
+     color: #ffffff;
+     background: rgba(0, 0, 0, 0.75);
+     font-size: 14px;
+     text-align: center;
+   }
